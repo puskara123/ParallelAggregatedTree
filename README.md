@@ -13,6 +13,9 @@ This project implements the Parallel Aggregated Trees (PAT) algorithm for collec
 - **Non-Power-of-Two Support:** Works correctly with any number of MPI ranks
 - **Well-Documented Code:** Comprehensive comments explaining each phase and design decision
 
+## Video Presentation Link
+https://drive.google.com/drive/folders/1oEfcgjaTRr4DDVhq8k1bP1qf1NjKaUzQ?usp=sharing
+
 ## Compilation
 
 ### Prerequisites
