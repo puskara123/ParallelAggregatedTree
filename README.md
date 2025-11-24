@@ -23,7 +23,7 @@ This project implements the Parallel Aggregated Trees (PAT) algorithm for collec
 ### Build Commands
 
 ```
-mpicc -o pat_allgather pat_allgather.c -lm
+mpicc -o pat_allgather PAT_AllGatherBase.c -lm
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ mpicc -o pat_allgather pat_allgather.c -lm
 mpirun -np 8 ./pat_allgather
 
 # Run with 16 processes
-mpirun -np 16 ./pat_allgather
+mpirun --use-hwthread-cpus -np 16 ./pat_allgather
 
 # Run with non-power-of-two (e.g., 7 ranks)
 mpirun -np 7 ./pat_allgather
