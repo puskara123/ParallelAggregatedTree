@@ -166,7 +166,7 @@ void PAT_AllGather(int* sendbuf, int sendcount, int* recvbuf, int recvcount, MPI
         free(recv_buf);
         
         // Barrier to ensure all processes are synchronized
-        MPI_Barrier(comm);
+        // MPI_Barrier(comm);
     }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
